@@ -1,5 +1,5 @@
 {
-  "name": "@ionic/pwa-elements",
+  "name": "@tagshelf/pwa-elements",
   "version": "3.0.2",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",

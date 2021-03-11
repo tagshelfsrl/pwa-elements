@@ -160,7 +160,7 @@ export class CameraPWA {
         const photo = await this.imageCapture.takePhoto({
           fillLightMode: this.flashModes.length > 1 ? this.flashMode : undefined
         });
-        
+
         await this.flashScreen();
 
         this.promptAccept(photo);
@@ -200,7 +200,7 @@ export class CameraPWA {
           break;
       }
     }
-    
+
     this.photoSrc = URL.createObjectURL(photo);
   }
 
@@ -459,17 +459,6 @@ export class CameraPWA {
         {this.hasCamera && (
         <div class="camera-footer">
           {!this.photo ? ([
-          <div class="pick-image" onClick={this.handlePickFile}>
-            <label htmlFor="_pwa-elements-file-pick">
-              {this.iconPhotos()}
-            </label>
-            <input
-              type="file"
-              id="_pwa-elements-file-pick"
-              onChange={this.handleFileInputChange}
-              accept="image/*"
-              class="pick-image-button" />
-          </div>,
           <div class="shutter" onClick={this.handleShutterClick}>
             <div class="shutter-button"></div>
           </div>,
