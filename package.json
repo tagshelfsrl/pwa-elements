@@ -1,5 +1,5 @@
 {
-  "name": "@tagshelf/pwa-elements",
+  "name": "@tagshelfsrl/pwa-elements",
   "version": "1.0.0",
   "description": "Stencil Component Starter",
   "main": "dist/index.js",
@@ -16,6 +16,9 @@
     "start": "stencil build --dev --watch --serve",
     "release": "np",
     "version": "npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "author": "Tagshelf",
   "license": "MIT",
